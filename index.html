@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://localhost/index.html?dev=51 -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<script type="text/javascript" src="./index_files/jquery-2.0.3.js.download"> </script>
+
+
+<!--
+<script>
+    document.write('<link rel="stylesheet" href="css/TID.css?dev=' + Math.floor(Math.random() * 100) + '"\><\/script>');
+</script>
+-->
+
+<script>
+document.write('<link rel="stylesheet" href="css/TID.css"\><\/script>');
+</script>
+
+<script>
+    var query = window.location.search.substring(1);
+    if (!query)
+      window.location = 'index.html?dev=' + Math.floor(Math.random() * 100);
+    if (query == 'admin')
+    {
+        CAMPIONATO.isAdmin = true;
+    }   
+</script></head>
+
+<!-- rilancio la pagina con un parametro per farla caricare se cambiata -->
+
+    
+<body height="1000px">
+    
+<!--                            INTESTAZIONE                                        -->   
+<main align="”center”" class="frame-principale"> 
+<div class="intestazione-img">
+    <img height="125" width="125" src="./img/gabbo.jpg">
+</div>
+<div>
+    <h1 class="intestazione-titolo">Credi in Gabbo?</h1>
+    <br>
+    <h1 class="intestazione-piede">Fai il test e scopri quanto sei Gabbano</h1>
+</div>
+
+<!--                            chat                                        -->   
+<iframe
+    allow="microphone;"
+    width="100%"
+    height="500px"
+    src="https://console.dialogflow.com/api-client/demo/embedded/b3f29c2b-dfdb-47fa-b59a-217305fb0416">
+</iframe>
+
+</main>
+</body></html>
